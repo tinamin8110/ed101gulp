@@ -75,7 +75,7 @@ gulp.task('default', function() {
             index : "index.html"
         }
     });
-    gulp.watch('./sass/*.scss' ,['concat']).on('change',reload);;
+    gulp.watch('./sass/*.scss' ,['concat']).on('change',reload);
     gulp.watch(['./*.html' ,'./**/*.html'] ,['fileinclude']).on('change',reload);
 });
 
